@@ -12,7 +12,19 @@
       <!-- This property will be set by the Maven Dependency plugin -->
       <annotatedJdk>${org.checkerframework:jdk8:jar}</annotatedJdk>
   </properties>
-
+	
+	<distributionManagement>
+	    <snapshotRepository>
+		<id>snapshots</id>
+		<name>ip-172-31-84-111-snapshots</name>
+		<url>http://ec2-3-87-24-212.compute-1.amazonaws.com:8081/artifactory/mr-snapshots</url>
+	    </snapshotRepository>
+		<repository>
+		<id>central</id>
+		<name>ip-172-31-84-111-releases</name>
+		<url>http://ec2-3-87-24-212.compute-1.amazonaws.com:8081/artifactory/m2-releases</url>
+	    </repository>
+	</distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
