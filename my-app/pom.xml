@@ -20,6 +20,18 @@
 	<distributionManagement>
 	    <snapshotRepository>
 		<id>snapshots</id>
+		<name>tarakant1c.mylabserver.com-snapshots</name>
+		<url>http://tarakant1d.mylabserver.com:8081/artifactory/m2-snapshots</url>
+	    </snapshotRepository>
+	    <repository>
+		<id>central</id>
+		<name>tarakant1c.mylabserver.com-releases</name>
+		<url>http://tarakant1d.mylabserver.com:8081/artifactory/m2-releases</url>
+	    </repository>
+	</distributionManagement>
+	<!--<distributionManagement>
+	    <snapshotRepository>
+		<id>snapshots</id>
 		<name>ip-172-31-84-111-snapshots</name>
 		<url>http://ec2-3-87-24-212.compute-1.amazonaws.com:8081/artifactory/mr-snapshots</url>
 	    </snapshotRepository>
@@ -28,7 +40,7 @@
 		<name>ip-172-31-84-111-releases</name>
 		<url>http://ec2-3-87-24-212.compute-1.amazonaws.com:8081/artifactory/m2-releases</url>
 	    </repository>
-	</distributionManagement>
+	</distributionManagement>-->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
